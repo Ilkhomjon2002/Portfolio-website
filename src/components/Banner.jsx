@@ -10,7 +10,7 @@ const Banner = () => {
 	const toRotate = ["Web Developer!", "React Js Developer!"];
 	const [text, setText] = useState("");
 	const [delta, setDelta] = useState(300 - Math.random() * 100);
-	const period = 1000;
+	const period = 500;
 
 	useEffect(() => {
 		let ticker = setInterval(() => {

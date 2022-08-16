@@ -1,6 +1,9 @@
+.skill {
+	padding: 0;
+}
 .skill-box {
 	text-align: center;
-	padding: 6rem 5rem;
+	padding: 20rem 5rem;
 	margin-top: -5rem;
 }
 .skill-box h2 {

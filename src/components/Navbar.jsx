@@ -49,6 +49,15 @@ export const Navbar = () => {
 						}
 					>
 						About
+					</a>{" "}
+					<a
+						href="#projects"
+						onClick={() => onUpdateActiveLink("projects")}
+						className={
+							activeLink === "projects" ? "active navbar-link" : "navbar-link"
+						}
+					>
+						Projects
 					</a>
 					<a
 						href="#skills"
@@ -60,13 +69,13 @@ export const Navbar = () => {
 						Skills
 					</a>
 					<a
-						href="#projects"
-						onClick={() => onUpdateActiveLink("projects")}
+						href="#contact"
+						onClick={() => onUpdateActiveLink("contact")}
 						className={
-							activeLink === "projects" ? "active navbar-link" : "navbar-link"
+							activeLink === "contact" ? "active navbar-link" : "navbar-link"
 						}
 					>
-						Projects
+						Contact
 					</a>
 				</div>
 				<span className="navbar-text">
@@ -74,7 +83,7 @@ export const Navbar = () => {
 						<a href="#">
 							<RiKakaoTalkFill></RiKakaoTalkFill>
 						</a>
-						<a href="#">
+						<a href="https://www.linkedin.com/in/ilhom-maxsudov-087242191/">
 							<FaLinkedin></FaLinkedin>
 						</a>
 						<a href="https://github.com/Ilkhomjon2002">
