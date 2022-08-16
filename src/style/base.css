@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+body {
+	-webkit-touch-callout: none; /* IOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of FireFox */
+	-ms-user-select: none; /* Internet Explorer/ Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera */
+}
+
+:root {
+	--base-color: #141316;
+	--white-color: #f4f7f8;
+	--white-color2: #e8edf1;
+
+	--bp-largest: 160rem;
+	--bp-mid-large: 135rem;
+	--bp-large: 117rem;
+	--bp-medium: 90rem;
+	--bp-small: 60rem;
+}

@@ -1,0 +1,19 @@
+.BannerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 90%;
+	margin: 0 auto;
+	height: 100%;
+}
+.title {
+	font-family: Centra;
+	font-size: 50px;
+	font-weight: 500;
+}
+.header-img {
+	width: 40%;
+}
+.highlighted {
+	color: #9b3585;
+}

@@ -1,0 +1,81 @@
+html {
+	font-size: 10px;
+}
+.About {
+	height: 100vh;
+	margin: 0 12rem 5rem 12rem;
+	margin-bottom: 10rem;
+	width: 90%;
+	margin: 0 auto;
+	transform: translateY(8rem);
+}
+.About__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+
+.About__heading {
+	text-align: center;
+	margin-bottom: 3rem;
+	color: var(--white-color);
+	font-size: 4rem;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+.About__heading::after {
+	content: "";
+	display: block;
+	width: 8rem;
+	height: 2px;
+
+	margin: auto;
+	margin-top: 1rem;
+
+	background-color: var(--white-color);
+}
+.About__textWrapper {
+	width: 47%;
+	height: 45rem;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 4rem 2rem;
+	overflow: hidden;
+	margin: 0 5rem;
+	border-radius: 1rem;
+}
+h2 {
+	font-size: 10rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h3:not(:last-child) {
+	margin-bottom: 1rem;
+}
+.About__pic {
+	font-family: sans-serif;
+	text-align: center;
+	width: 45rem;
+	height: 45rem;
+	border-radius: 1rem;
+	background-image: url(../assets/me.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.About__pic h1 {
+	width: 10rem;
+	position: absolute;
+	top: -10%;
+	left: 75%;
+	display: inline-block;
+	color: #fff;
+	margin-bottom: -4rem;
+}

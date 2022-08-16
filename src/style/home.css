@@ -1,0 +1,10 @@
+.container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url("../assets/banner-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
