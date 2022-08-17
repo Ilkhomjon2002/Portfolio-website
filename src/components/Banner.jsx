@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "../style/banner.css";
 import { ReactComponent as HeaderImg } from "../assets/header-img.svg";
-
 const Banner = () => {
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
@@ -43,7 +42,7 @@ const Banner = () => {
 		}
 	};
 	return (
-		<div className="BannerContainer" id="home">
+		<div className="BannerContainer" /*ref={ref}*/ id="home">
 			<div>
 				<h1 className="title">
 					Hello I am <span className="highlighted">Ilkhomjon </span> and

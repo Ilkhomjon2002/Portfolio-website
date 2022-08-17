@@ -3,7 +3,7 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "../style/navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 export const Navbar = () => {
 	const [activeLink, setActiveLink] = useState("home");
 	const [scrolled, setScrolled] = useState(false);
@@ -44,39 +44,19 @@ export const Navbar = () => {
 				</div>
 
 				<div className="nav">
-					<a
-						href="#home"
-						onClick={() => handleClick()}
-						className={"navbar-link"}
-					>
+					<a href="#home" className={"navbar-link"}>
 						Home
 					</a>{" "}
-					<a
-						href="#About"
-						onClick={() => handleClick()}
-						className={"navbar-link"}
-					>
+					<a href="#About" className={"navbar-link"}>
 						About
 					</a>{" "}
-					<a
-						href="#projects"
-						onClick={() => handleClick()}
-						className={"navbar-link"}
-					>
+					<a href="#projects" className={"navbar-link"}>
 						Projects
 					</a>
-					<a
-						href="#skills"
-						onClick={() => handleClick()}
-						className={"navbar-link"}
-					>
+					<a href="#skills" className={"navbar-link"}>
 						Skills
 					</a>
-					<a
-						href="#contact"
-						onClick={() => handleClick()}
-						className={"navbar-link"}
-					>
+					<a href="#contact" className={"navbar-link"}>
 						Contact
 					</a>
 				</div>

@@ -85,26 +85,19 @@ h3:not(:last-child) {
 		font-size: 5rem;
 	}
 	.About__textWrapper h3 {
-		font-size: 1.3rem;
-	}
-	.About__textWrapper {
-		height: 40rem;
-	}
-	.About__pic {
-		height: 40rem;
-		width: 30rem;
+		font-size: 1.75rem;
 	}
 }
 @media (max-width: 37.5em) {
 	.About__content {
 		flex-direction: column;
-		gap: 1.5rem;
+		gap: 2rem;
 	}
 	.About__textWrapper h2 {
 		font-size: 5rem;
 	}
 	.About__textWrapper h3 {
-		font-size: 1.7rem;
+		font-size: 2.3rem;
 	}
 	.About__textWrapper {
 		height: 40rem;
@@ -113,7 +106,7 @@ h3:not(:last-child) {
 		padding: 0;
 	}
 	.About__pic {
-		height: 40rem;
+		height: 70rem;
 		width: 60%;
 	}
 }
