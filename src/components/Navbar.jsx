@@ -43,58 +43,123 @@ export const Navbar = () => {
 				</div>
 
 				<div className="nav">
-					<a href="#home" className={"navbar-link"}>
+					<Link
+						to="home"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
+						className={"navbar-link"}
+					>
 						Home
-					</a>{" "}
-					<a href="#About" className={"navbar-link"}>
+					</Link>{" "}
+					<Link
+						to="About"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={-50}
+						duration={1500}
+						className={"navbar-link"}
+					>
 						About
-					</a>{" "}
-					<a href="#projects" className={"navbar-link"}>
+					</Link>{" "}
+					<Link
+						to="projects"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={-50}
+						duration={1500}
+						className={"navbar-link"}
+					>
 						Projects
-					</a>
-					<a href="#skills" className={"navbar-link"}>
+					</Link>
+					<Link
+						to="skills"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
+						className={"navbar-link"}
+					>
 						Skills
-					</a>
-					<a href="#contact" className={"navbar-link"}>
+					</Link>
+					<Link
+						to="contact"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
+						className={"navbar-link"}
+					>
 						Contact
-					</a>
+					</Link>
 				</div>
 				<div className={click ? "nav-active" : "nav-2"}>
-					<a
-						href="#home"
+					<Link
+						to="home"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
 						onClick={() => handleClick()}
 						className={"navbar-link"}
 					>
 						Home
-					</a>{" "}
-					<a
-						href="#About"
+					</Link>{" "}
+					<Link
+						to="About"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
 						onClick={() => handleClick()}
 						className={"navbar-link"}
 					>
 						About
-					</a>{" "}
-					<a
-						href="#projects"
+					</Link>{" "}
+					<Link
+						to="projects"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
 						onClick={() => handleClick()}
 						className={"navbar-link"}
 					>
 						Projects
-					</a>
-					<a
-						href="#skills"
+					</Link>
+					<Link
+						to="skills"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
 						onClick={() => handleClick()}
 						className={"navbar-link"}
 					>
 						Skills
-					</a>
-					<a
-						href="#contact"
+					</Link>
+					<Link
+						to="contact"
+						activeClass="active"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1500}
 						onClick={() => handleClick()}
 						className={"navbar-link"}
 					>
 						Contact
-					</a>
+					</Link>
 					<div className="social-icon">
 						<a href="mailto:ilhommaxsudov3.com">
 							<HiMail></HiMail>

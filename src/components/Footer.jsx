@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import "../style/footer.css";
+import { Link } from "react-scroll";
 const Footer = () => {
 	return (
 		<div className="footer-container">
@@ -17,21 +18,61 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className="nav footer-links">
-				<a href="#home" className={"navbar-link"}>
+				<Link
+					to="home"
+					activeClass="active"
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={1500}
+					className={"navbar-link"}
+				>
 					Home
-				</a>{" "}
-				<a href="#About" className={"navbar-link"}>
+				</Link>{" "}
+				<Link
+					to="About"
+					activeClass="active"
+					spy={true}
+					smooth={true}
+					offset={-50}
+					duration={1500}
+					className={"navbar-link"}
+				>
 					About
-				</a>{" "}
-				<a href="#projects" className={"navbar-link"}>
+				</Link>{" "}
+				<Link
+					to="projects"
+					activeClass="active"
+					spy={true}
+					smooth={true}
+					offset={-50}
+					duration={1500}
+					className={"navbar-link"}
+				>
 					Projects
-				</a>
-				<a href="#skills" className={"navbar-link"}>
+				</Link>
+				<Link
+					to="skills"
+					activeClass="active"
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={1500}
+					className={"navbar-link"}
+				>
 					Skills
-				</a>
-				<a href="#contact" className={"navbar-link"}>
+				</Link>
+				<Link
+					to="contact"
+					activeClass="active"
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={1500}
+					className={"navbar-link"}
+				>
 					Contact
-				</a>
+				</Link>
 			</div>
 			<div className="others">
 				<span>01022860204</span>

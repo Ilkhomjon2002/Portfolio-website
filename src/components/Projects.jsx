@@ -14,7 +14,8 @@ import { FaTimes } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import { Parallax } from "react-parallax";
 import Img3 from "../assets/cosmos-3.jpg";
-
+import Landing from "../assets/bankist-landing.png";
+import Landing2 from "../assets/bankist-landing-2.jpg";
 import "../style/projects.css";
 function Projects() {
 	const projectList = [
@@ -62,6 +63,15 @@ function Projects() {
 			type: "Well-known game",
 			info: "Computer based version of popular game. (가위 바위 보) ",
 			link: "https://rock-paper-scissors-three-tawny.vercel.app/",
+		},
+		{
+			name: "Bankist",
+			tools: "CSS/JS/Advanced Dom",
+			mainPic: Landing2,
+			webPic: Landing,
+			type: "Simple landing page with advanced features of javascript dom",
+			info: "Fully developed with vanilla js and without any libraries. ",
+			link: "https://advanced-dom-ashy.vercel.app/",
 		},
 	];
 
