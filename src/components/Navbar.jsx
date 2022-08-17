@@ -2,10 +2,17 @@ import { useEffect, useState } from "react";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "../style/navbar.css";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 export const Navbar = () => {
 	const [activeLink, setActiveLink] = useState("home");
 	const [scrolled, setScrolled] = useState(false);
 	const [msg, setMsg] = useState("Welcome");
+	const [click, setClick] = useState(false);
+
+	const handleClick = () => {
+		setClick(!click);
+	};
 	useEffect(() => {
 		const onScroll = () => {
 			if (window.scrollY > 50) {
@@ -28,55 +35,98 @@ export const Navbar = () => {
 				<a href="#home">
 					<span className="msg">{msg}</span>
 				</a>
-				<div aria-controls="basic-navbar-nav">
-					<span className="navbar-toggler-icon"></span>
+				<div className="hamburger" onClick={handleClick}>
+					{click ? (
+						<FaTimes size={10} style={{ color: "#ffffff" }} />
+					) : (
+						<FaBars size={10} style={{ color: "#ffffff" }} />
+					)}
 				</div>
+
 				<div className="nav">
 					<a
 						href="#home"
-						onClick={() => onUpdateActiveLink("home")}
-						className={
-							activeLink === "home" ? "active navbar-link" : "navbar-link"
-						}
+						onClick={() => handleClick()}
+						className={"navbar-link"}
 					>
 						Home
 					</a>{" "}
 					<a
 						href="#About"
-						onClick={() => onUpdateActiveLink("about")}
-						className={
-							activeLink === "about" ? "active navbar-link" : "navbar-link"
-						}
+						onClick={() => handleClick()}
+						className={"navbar-link"}
 					>
 						About
 					</a>{" "}
 					<a
 						href="#projects"
-						onClick={() => onUpdateActiveLink("projects")}
-						className={
-							activeLink === "projects" ? "active navbar-link" : "navbar-link"
-						}
+						onClick={() => handleClick()}
+						className={"navbar-link"}
 					>
 						Projects
 					</a>
 					<a
 						href="#skills"
-						onClick={() => onUpdateActiveLink("skills")}
-						className={
-							activeLink === "skills" ? "active navbar-link" : "navbar-link"
-						}
+						onClick={() => handleClick()}
+						className={"navbar-link"}
 					>
 						Skills
 					</a>
 					<a
 						href="#contact"
-						onClick={() => onUpdateActiveLink("contact")}
-						className={
-							activeLink === "contact" ? "active navbar-link" : "navbar-link"
-						}
+						onClick={() => handleClick()}
+						className={"navbar-link"}
 					>
 						Contact
 					</a>
+				</div>
+				<div className={click ? "nav-active" : "nav-2"}>
+					<a
+						href="#home"
+						onClick={() => handleClick()}
+						className={"navbar-link"}
+					>
+						Home
+					</a>{" "}
+					<a
+						href="#About"
+						onClick={() => handleClick()}
+						className={"navbar-link"}
+					>
+						About
+					</a>{" "}
+					<a
+						href="#projects"
+						onClick={() => handleClick()}
+						className={"navbar-link"}
+					>
+						Projects
+					</a>
+					<a
+						href="#skills"
+						onClick={() => handleClick()}
+						className={"navbar-link"}
+					>
+						Skills
+					</a>
+					<a
+						href="#contact"
+						onClick={() => handleClick()}
+						className={"navbar-link"}
+					>
+						Contact
+					</a>
+					<div className="social-icon">
+						<a href="#">
+							<RiKakaoTalkFill></RiKakaoTalkFill>
+						</a>
+						<a href="https://www.linkedin.com/in/ilhom-maxsudov-087242191/">
+							<FaLinkedin></FaLinkedin>
+						</a>
+						<a href="https://github.com/Ilkhomjon2002">
+							<FaGithub></FaGithub>
+						</a>
+					</div>
 				</div>
 				<span className="navbar-text">
 					<div className="social-icon">

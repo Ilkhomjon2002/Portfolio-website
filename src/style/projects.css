@@ -189,3 +189,40 @@
 	text-decoration: none;
 	color: var(--white-color);
 }
+@media (max-width: 84.37em) {
+	.projects {
+		width: 110rem;
+	}
+	.projects__top h1 {
+		font-size: 3.5rem;
+	}
+	.projects__project {
+		height: 33rem;
+	}
+}
+@media (max-width: 56.25em) {
+	.projects {
+		width: 85rem;
+	}
+	.projects__top h1 {
+		font-size: 3rem;
+	}
+	.projects__project {
+		height: 26rem;
+	}
+}
+@media (max-width: 37.5em) {
+	.projects__grid {
+		display: block;
+	}
+	.projects {
+		width: 85rem;
+		padding: 3rem 4rem;
+	}
+	.projects__top h1 {
+		font-size: 4rem;
+	}
+	.projects__project {
+		height: 40rem;
+	}
+}

@@ -19,3 +19,11 @@
 	font-size: 1.2rem;
 	font-weight: 500;
 }
+
+@media (max-width: 56.25em) {
+	.footer-icons {
+		width: 15%;
+		display: flex !important;
+		justify-content: space-between;
+	}
+}

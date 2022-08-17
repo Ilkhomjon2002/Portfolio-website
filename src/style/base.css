@@ -5,9 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-html {
-	font-size: 10px;
-}
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -19,15 +17,42 @@ body {
 	-ms-user-select: none; /* Internet Explorer/ Edge */
 	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera */
 }
-
+html {
+	font-size: 62.5%;
+}
 :root {
 	--base-color: #141316;
 	--white-color: #f4f7f8;
 	--white-color2: #e8edf1;
 
-	--bp-largest: 160rem;
-	--bp-mid-large: 135rem;
-	--bp-large: 117rem;
-	--bp-medium: 90rem;
-	--bp-small: 60rem;
+	--bp-largest: 100em; /* 1600px*/
+	--bp-mid-large: 84.37em; /*1350px*/
+	--bp-large: 73.12em; /*1170px*/
+	--bp-medium: 56.25em; /*900px*/
+	--bp-small: 37.5em; /*600px*/
+}
+@media (max-width: 100em) {
+	html {
+		font-size: 56.25%;
+	}
+}
+@media (max-width: 84.37em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media (max-width: 73.12em) {
+	html {
+		font-size: 43.75%;
+	}
+}
+@media (max-width: 56.25em) {
+	html {
+		font-size: 37.5%;
+	}
+}
+@media (max-width: 37.5em) {
+	html {
+		font-size: 25.5%;
+	}
 }

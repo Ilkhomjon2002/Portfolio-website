@@ -30,8 +30,8 @@ a {
 	font-weight: 400;
 	color: #fff !important;
 	letter-spacing: 0.8px;
-	padding: 25px;
-	font-size: 18px;
+	padding: 2.5rem;
+	font-size: 1.8rem;
 	opacity: 0.75;
 	transition: 0.3s ease-in-out;
 }
@@ -46,26 +46,26 @@ span.navbar-text {
 }
 .social-icon {
 	display: inline-block;
-	margin-left: 14px;
+	margin-left: 1.4rem;
 }
 
 .social-icon a {
-	width: 42px;
-	height: 42px;
+	width: 4.2rem;
+	height: 4.2rem;
 	background-color: rgba(217, 217, 217, 0.1);
 	display: inline-flex;
 	border-radius: 50%;
-	margin-right: 6px;
+	margin-right: 0.6rem;
 	align-items: center;
 	justify-content: center;
 	line-height: 1;
-	border: 1px solid rgba(255, 255, 255, 0.5);
+	border: 0.1rem solid rgba(255, 255, 255, 0.5);
 }
 
 .social-icon a::before {
 	content: "";
-	width: 42px;
-	height: 42px;
+	width: 4.2rem;
+	height: 4.2rem;
 	position: absolute;
 	background-color: #ffffff;
 	border-radius: 50%;
@@ -80,9 +80,9 @@ span.navbar-text {
 	font-weight: 700;
 	color: #fff;
 	border: 1px solid #fff;
-	padding: 18px 34px;
-	font-size: 18px;
-	margin-left: 18px;
+	padding: 1.8rem 3.4rem;
+	font-size: 1.8rem;
+	margin-left: 1.8rem;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
@@ -114,5 +114,63 @@ span.navbar-text {
 }
 .navContainer .msg {
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 3rem;
+}
+.hamburger {
+	display: none;
+	color: #fff;
+	z-index: 34;
+}
+.nav-2 {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.nav-active {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-direction: column;
+	background-color: var(--base-color);
+	transition: all 1s;
+	padding: 10rem 3rem;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+@media (max-width: 73.12em) {
+	.hamburger {
+		display: inline-block;
+		width: 4rem;
+	}
+	.navbar {
+		width: 100%;
+		padding: 2rem 4rem;
+		overflow: visible;
+	}
+	.nav {
+		display: none;
+	}
+	.navbar-text {
+		display: none !important;
+	}
+	.nav-2 {
+		display: block;
+		flex-direction: column;
+		top: -100%;
+		position: fixed;
+		height: 0%;
+		width: 0%;
+		transition: 1s;
+	}
+	.navbar-link {
+		font-size: 5rem;
+	}
 }
