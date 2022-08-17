@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { RiKakaoTalkFill } from "react-icons/ri";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaMailchimp } from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
 import "../style/navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -26,9 +27,7 @@ export const Navbar = () => {
 		window.addEventListener("scroll", onScroll);
 		return () => window.removeEventListener("scroll", onScroll);
 	}, []);
-	const onUpdateActiveLink = (value) => {
-		setActiveLink(value);
-	};
+
 	return (
 		<div className={scrolled ? "navbar scrolled" : "navbar"}>
 			<div className="navContainer">
@@ -97,8 +96,8 @@ export const Navbar = () => {
 						Contact
 					</a>
 					<div className="social-icon">
-						<a href="#">
-							<RiKakaoTalkFill></RiKakaoTalkFill>
+						<a href="mailto:ilhommaxsudov3.com">
+							<HiMail></HiMail>
 						</a>
 						<a href="https://www.linkedin.com/in/ilhom-maxsudov-087242191/">
 							<FaLinkedin></FaLinkedin>
@@ -110,8 +109,8 @@ export const Navbar = () => {
 				</div>
 				<span className="navbar-text">
 					<div className="social-icon">
-						<a href="#">
-							<RiKakaoTalkFill></RiKakaoTalkFill>
+						<a href="mailto:ilhommaxsudov3.com">
+							<HiMail></HiMail>
 						</a>
 						<a href="https://www.linkedin.com/in/ilhom-maxsudov-087242191/">
 							<FaLinkedin></FaLinkedin>

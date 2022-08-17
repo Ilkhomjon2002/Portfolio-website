@@ -1,15 +1,15 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { RiKakaoTalkFill } from "react-icons/ri";
+import { HiMail } from "react-icons/hi";
 import "../style/footer.css";
 const Footer = () => {
 	return (
 		<div className="footer-container">
 			<div className="social-icon footer-icons">
-				<a href="#">
-					<RiKakaoTalkFill></RiKakaoTalkFill>
+				<a href="mailto:ilhommaxsudov3.com">
+					<HiMail></HiMail>
 				</a>
-				<a href="#">
+				<a href="https://www.linkedin.com/in/ilhom-maxsudov-087242191/">
 					<FaLinkedin></FaLinkedin>
 				</a>
 				<a href="https://github.com/Ilkhomjon2002">

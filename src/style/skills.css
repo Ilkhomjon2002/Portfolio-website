@@ -44,7 +44,7 @@
 	position: relative;
 }
 .skill-slider .item h5 {
-	font-size: 2rem;
+	font-size: 3rem;
 	position: absolute;
 	top: 45%;
 	transform: translate(-50%, -50%);
@@ -53,4 +53,14 @@
 .skill-slider .item img {
 	width: 50%;
 	margin: 0 auto 1.5rem auto;
+}
+@media (max-width: 84.37em) {
+	.skill-slider .item h5 {
+		font-size: 4rem;
+	}
+}
+@media (max-width: 37.5em) {
+	.skill-slider .item h5 {
+		font-size: 5rem;
+	}
 }
