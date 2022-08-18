@@ -39,7 +39,7 @@ function Projects() {
 		},
 		{
 			name: "Houzing",
-			tools: "React JS / Styled Component ",
+			tools: "React JS / Styled Component / Swagger ",
 			mainPic: Houzing,
 			webPic: Houzing2,
 			type: "This site is for selling, renting and buying houses.",
