@@ -71,7 +71,7 @@ function Projects() {
 			webPic: Space,
 			type: "Simple website that was built with react.",
 			info: "This website was built to learn react router dom",
-			link: "https://advanced-dom-ashy.vercel.app/",
+			link: "https://space-lyart-rho.vercel.app/",
 		},
 	];
 
