@@ -189,6 +189,11 @@
 	text-decoration: none;
 	color: var(--white-color);
 }
+.row {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
 @media (max-width: 84.37em) {
 	.projects {
 		width: 110rem;

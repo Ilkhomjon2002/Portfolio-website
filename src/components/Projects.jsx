@@ -27,6 +27,7 @@ function Projects() {
 			type: "Web-Game",
 			info: "Game in which you have to find matching numbers/icons ",
 			link: "https://memory-game2-delta.vercel.app/",
+			gitLink: "https://github.com/Ilkhomjon2002/memory-game",
 		},
 		{
 			name: "Mini Bank",
@@ -36,6 +37,7 @@ function Projects() {
 			type: "Simple online banking app",
 			info: "This application allows users to login, transfer funds to other accounts, borrow funds or close the account",
 			link: "https://bankist-app-eosin.vercel.app/",
+			gitLink: "https://github.com/Ilkhomjon2002/bankist-app",
 		},
 		{
 			name: "Houzing",
@@ -45,6 +47,7 @@ function Projects() {
 			type: "This site is for selling, renting and buying houses.",
 			info: "This is fully developed web-site which integrates with back-end also. There are almost all the features and parts that modern site can contain in this site. It is almost finished, I am STILL WORKING on it ",
 			link: "https://intern-bay.vercel.app/home",
+			gitLink: "https://github.com/Ilkhomjon2002/intern",
 		},
 		{
 			name: "Trillo",
@@ -53,7 +56,8 @@ function Projects() {
 			webPic: Trillo2,
 			type: "All-in-one-one booking App",
 			info: "Sample website for a touring company that demonstrates modern responsive design ",
-			link: "https://trillo-henna.vercel.app/",
+			link: "https://trillo-2.vercel.app/",
+			gitLink: "https://github.com/Ilkhomjon2002/trillo-2",
 		},
 		{
 			name: "Rock Paper Scissors",
@@ -63,6 +67,7 @@ function Projects() {
 			type: "Well-known game",
 			info: "Computer based version of popular game. (가위 바위 보) ",
 			link: "https://rock-paper-scissors-three-tawny.vercel.app/",
+			gitLink: "https://github.com/Ilkhomjon2002/RockPaperScissors",
 		},
 		{
 			name: "Space",
@@ -72,6 +77,7 @@ function Projects() {
 			type: "Simple website that was built with react.",
 			info: "This website was built to learn react router dom",
 			link: "https://space-lyart-rho.vercel.app/",
+			gitLink: "https://github.com/Ilkhomjon2002/space",
 		},
 	];
 
@@ -126,15 +132,26 @@ function Projects() {
 												<h2>{projectList[click.id].type}</h2>
 												<p>{projectList[click.id].info}</p>
 												<div className="projects__visit-site-box">
-													<button className="projects__btn--2 projects__btn">
-														<a
-															href={projectList[click.id].link}
-															target="_blank"
-															className="projects__link"
-														>
-															Visit Site
-														</a>
-													</button>
+													<div className="row">
+														<button className="projects__btn--2 projects__btn">
+															<a
+																href={projectList[click.id].link}
+																target="_blank"
+																className="projects__link"
+															>
+																Visit Site
+															</a>
+														</button>
+														<button className="projects__btn--2 projects__btn">
+															<a
+																href={projectList[click.id].gitLink}
+																target="_blank"
+																className="projects__link"
+															>
+																See Code
+															</a>
+														</button>
+													</div>
 
 													<FaTimes
 														className="projects__exit"
